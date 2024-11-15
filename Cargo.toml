@@ -23,7 +23,6 @@ exclude = [
 [badges]
 maintenance = { status = "actively-developed" }
 
-# Dependencies you'll likely need:
 [dependencies]
 
 # Optional features
