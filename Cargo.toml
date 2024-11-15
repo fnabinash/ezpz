@@ -1,0 +1,35 @@
+[package]
+name = "ezpz"
+version = "0.0.1"
+edition = "2021"
+authors = ["Abinash S. <fnabinash@gmail.com>"]
+license = "MIT"
+description = "A smart Rust project bootstrapper with interactive setup and best practices"
+readme = "README.md"
+homepage = "https://github.com/fnabinash/ezpz"
+repository = "https://github.com/fnabinash/ezpz"
+documentation = "https://docs.rs/ezpz"
+keywords = ["cli", "bootstrap", "template", "project-generator", "scaffold"]
+categories = ["development-tools", "development-tools::cargo-plugins", "command-line-utilities"]
+rust-version = "1.70.0"
+exclude = [
+    "examples/*",
+    "tests/*",
+    "benches/*",
+    "*.log",
+    ".github/*"
+]
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+# Dependencies you'll likely need:
+[dependencies]
+
+# Optional features
+[features]
+default = ["cli"]
+cli = []
+api = []
+wasm = []
+full = ["cli", "api", "wasm"]
